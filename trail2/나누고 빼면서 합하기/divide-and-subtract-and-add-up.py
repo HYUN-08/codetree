@@ -4,8 +4,9 @@ a = list(map(int, input().split()))
 # Please write your code here.
 ans = a[0]
 
-def change_m(m):
+def change_m():
     global ans
+    global m
 
     while m != 1:
         ans += a[m - 1]
@@ -19,4 +20,4 @@ def change_m(m):
 if m == 1:
     print(ans)
 else:
-    print(change_m(m))
+    print(change_m())
